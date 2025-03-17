@@ -25,11 +25,38 @@ function login(username){
     }
     return `${username} just logged in`
 }
-console.log(login())
+//console.log(login())
 
 /******** OR ************/
 
 function login1(username="aditya"){
     return `${username} just logged in`
 }
-console.log(login1())
+//console.log(login1())
+
+
+
+
+function  calCartPrice(...num1){  // ... : its rest operator, combines all argumnets and return as an array
+    return num1
+}
+//console.log(calCartPrice(200,300,24))
+
+const user={
+    username:"akshat",
+    age:20
+}
+function handleObj(anyObj){
+    console.log(`username is ${anyObj.username} and age is ${anyObj.age}`)
+}
+handleObj(user)
+handleObj({
+    username:"kishika",
+    age:19
+})
+
+const arr=[200,100,500,900]
+function return3rdValue(array){
+    return array[2]
+}
+console.log(return3rdValue(arr))
